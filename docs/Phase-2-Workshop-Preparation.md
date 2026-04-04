@@ -82,3 +82,13 @@
      - Mitigation: independent validation path and randomized negative tests
 - Risk: workshop day operational confusion
      - Mitigation: operator runbook and role-based live checklist
+
+<div align="center">
+
+[⬆️ Back to Top ⬆️](#phase-2-plan-workshop-preparation-weeks-11-12)
+
+---
+
+[Back Phase](./Phase-1-Foundation-Core-Protocol.md) | [Next phase](./Phase-3-Session-Control-Integration.md)
+
+</div>

@@ -96,3 +96,13 @@ Track each gateway with:
 - Day 5: bring up test harness with golden vectors
 - Day 6: set benchmark harness and memory measurement method
 - Day 7: Gateway 0 readiness review and adjustments
+
+<div align="center">
+
+[⬆️ Back to Top ⬆️](#program-execution-plan-team-of-4)
+
+---
+
+[Back Phase](./README.md) | [Next phase](./Phase-1-Foundation-Core-Protocol.md)
+
+</div>

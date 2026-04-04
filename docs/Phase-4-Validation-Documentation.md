@@ -97,3 +97,13 @@ Exit criteria:
 
 - Gateways 7-10 complete with full evidence chain
 - Submission package is complete, reproducible, and reviewer-friendly
+
+<div align="center">
+
+[⬆️ Back to Top ⬆️](#phase-4-plan-validation-and-documentation-weeks-19-21)
+
+---
+
+[Back Phase](./Phase-3-Session-Control-Integration.md) | [Next phase](./IDA-Blueprint-Pack.md)
+
+</div>

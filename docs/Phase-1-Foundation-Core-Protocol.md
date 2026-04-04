@@ -104,3 +104,13 @@ Exit criteria:
 
 - Gateways 0-3 evidence complete
 - Workshop prerequisites met (working core + hex dump capability)
+
+<div align="center">
+
+[⬆️ Back to Top ⬆️](#phase-1-plan-foundation-and-core-protocol-weeks-1-10)
+
+---
+
+[Back Phase](./Program-Execution-Plan.md) | [Next phase](./Phase-2-Workshop-Preparation.md)
+
+</div>

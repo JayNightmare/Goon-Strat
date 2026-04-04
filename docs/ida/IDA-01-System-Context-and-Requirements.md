@@ -55,3 +55,13 @@ For each requirement:
 ## 6. Open Assumptions and Questions
 
 Track unresolved spec interpretation questions with owner and due date.
+
+<div align="center">
+
+[⬆️ Back to Top ⬆️](#ida-01-system-context-and-requirements)
+
+---
+
+[Back IDA](./IDA-00-Overview.md) | [Next IDA](./IDA-02-Layered-Architecture.md)
+
+</div>

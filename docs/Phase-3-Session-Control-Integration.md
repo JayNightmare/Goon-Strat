@@ -86,3 +86,13 @@ Exit criteria:
 
 - Gateways 4-6 complete with passing unit/integration tests
 - Session control features demonstrably stable under recovery scenarios
+
+<div align="center">
+
+[⬆️ Back to Top ⬆️](#phase-3-plan-session-control-and-integration-weeks-13-18)
+
+---
+
+[Back Phase](./Phase-2-Workshop-Preparation.md) | [Next phase](./Phase-4-Validation-Documentation.md)
+
+</div>

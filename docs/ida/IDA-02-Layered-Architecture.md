@@ -54,3 +54,13 @@ List key ADRs:
 - Serialization strategy
 - State transition representation
 - Interface abstraction trade-offs
+
+<div align="center">
+
+[⬆️ Back to Top ⬆️](#ida-02-layered-architecture)
+
+---
+
+[Back IDA](./IDA-01-System-Context-and-Requirements.md) | [Next IDA](./IDA-03-Interfaces-and-Wire-Format.md)
+
+</div>

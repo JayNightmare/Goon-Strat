@@ -51,3 +51,13 @@ Measure and report:
 - SLA per severity
 - Root cause template
 - Regression test requirement for every fixed defect
+
+<div align="center">
+
+[⬆️ Back to Top ⬆️](#ida-04-verification-validation-and-test-strategy)
+
+---
+
+[Back IDA](./IDA-03-Interfaces-and-Wire-Format.md) | [Next IDA](./IDA-05-Risk-and-Safety-Case.md)
+
+</div>

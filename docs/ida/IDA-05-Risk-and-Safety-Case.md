@@ -44,3 +44,13 @@ For each risk:
 - Mitigation implemented
 - Verification evidence available
 - No open high-risk items without approved workaround
+
+<div align="center">
+
+[⬆️ Back to Top ⬆️](#ida-05-risk-and-safety-case)
+
+---
+
+[Back IDA](./IDA-04-VandV-and-Test-Strategy.md) | [Next IDA](../IDA-Blueprint-Pack.md)
+
+</div>

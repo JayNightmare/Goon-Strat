@@ -23,3 +23,13 @@ This folder contains an execution-ready planning set based on the official deliv
 2. Use each phase file as the sprint and gateway control plan.
 3. Use `IDA-Blueprint-Pack.md` to produce architecture artifacts and review them at each gateway.
 4. Track progress weekly against gateway validation checklists and scoring categories.
+
+<div align="center">
+
+[⬆️ Back to Top ⬆️](#ccsds-2351-competition-planning-pack)
+
+---
+
+[Back Phase](./IDA-Blueprint-Pack.md) | [Next phase](./Program-Execution-Plan.md)
+
+</div>

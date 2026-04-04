@@ -52,3 +52,13 @@ Define categories:
 - Sequence errors
 - Channel errors
 - Conformance violations
+
+<div align="center">
+
+[⬆️ Back to Top ⬆️](#ida-03-interfaces-and-wire-format)
+
+---
+
+[Back IDA](./IDA-02-Layered-Architecture.md) | [Next IDA](./IDA-04-VandV-and-Test-Strategy.md)
+
+</div>
