@@ -150,7 +150,7 @@ Why this score strategy works:
 - It maps engineering effort to scoring weights, ensuring team time is spent where points are concentrated.
 - It reduces the risk of over-investing in low-weight categories before high-weight mandatory evidence is stable.
 
-## 9. Immediate Next 7 Days (from 4 Apr 2026)
+## 9. Immediate Next 7 Days (from upcoming meeting)
 
 - Day 1-2: finalize stack, architecture boundaries, repository scaffolding
 - Day 3-4: define SPDU data model and endian utility API
