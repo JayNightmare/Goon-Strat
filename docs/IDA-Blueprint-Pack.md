@@ -76,4 +76,4 @@ Document this explicitly in your first IDA review:
 
 ---
 
-[Back Phase](./Phase-4-Validation-Documentation.md) | [Next phase](./README.md)
+[Back Phase](./Phase-4-Validation-Documentation.md) | [Continue to IDA](./ida/IDA-00-Overview.md)
