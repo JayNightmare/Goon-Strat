@@ -124,4 +124,4 @@ Why these criteria:
 
 ---
 
-[Back Phase](./Phase-1-Foundation-Core-Protocol.md) | [Next phase](./Phase-3-Session-Control-Integration.md)
+[Back Phase](./Phase-1-Foundation-Core-Protocol.md) | [Next Phase](./Phase-3-Session-Control-Integration.md)

@@ -140,4 +140,4 @@ Why this freeze model:
 
 ---
 
-[Back Phase](./Phase-3-Session-Control-Integration.md) | [Next phase](./IDA-Blueprint-Pack.md)
+[Back Phase](./Phase-3-Session-Control-Integration.md) | [Continue to Blueprint](./IDA-Blueprint-Pack.md)

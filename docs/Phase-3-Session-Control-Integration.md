@@ -126,4 +126,4 @@ Rationale for risk controls:
 
 ---
 
-[Back Phase](./Phase-2-Workshop-Preparation.md) | [Next phase](./Phase-4-Validation-Documentation.md)
+[Back Phase](./Phase-2-Workshop-Preparation.md) | [Next Phase](./Phase-4-Validation-Documentation.md)

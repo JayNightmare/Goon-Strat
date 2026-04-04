@@ -41,4 +41,4 @@ This folder contains an execution-ready planning set based on the official deliv
 
 ---
 
-[Back Phase](./IDA-Blueprint-Pack.md) | [Next phase](./Program-Execution-Plan.md)
+[Back Phase](./IDA-Blueprint-Pack.md) | [Next Phase](./Program-Execution-Plan.md)

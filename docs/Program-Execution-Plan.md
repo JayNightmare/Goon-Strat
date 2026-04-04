@@ -177,4 +177,4 @@ Rationale for the first 7 days:
 
 ---
 
-[Back Phase](./README.md) | [Next phase](./Phase-1-Foundation-Core-Protocol.md)
+[Back Phase](./README.md) | [Next Phase](./Phase-1-Foundation-Core-Protocol.md)
