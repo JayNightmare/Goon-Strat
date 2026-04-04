@@ -31,6 +31,14 @@ Describe where this implementation runs and how it interacts with:
 - NFR-03: No leaks under stress and long-duration tests
 - NFR-04: Reproducible builds and test runs
 
+## Requirement Rationale Notes (fill this section)
+
+For each FR/NFR, include:
+
+- Why this requirement exists in mission and competition context.
+- What failure mode appears if this requirement is unmet.
+- What objective evidence proves fulfillment.
+
 ## 4. Requirement to Gateway Mapping
 
 - FR-01 -> Gateway 1
@@ -52,16 +60,16 @@ For each requirement:
 - Evidence artifact location
 - Status
 
+Acceptance criteria rationale:
+
+- Criteria must be binary and evidence-linked so judge validation is straightforward and repeatable.
+
 ## 6. Open Assumptions and Questions
 
 Track unresolved spec interpretation questions with owner and due date.
-
-<div align="center">
 
 [⬆️ Back to Top ⬆️](#ida-01-system-context-and-requirements)
 
 ---
 
 [Back IDA](./IDA-00-Overview.md) | [Next IDA](./IDA-02-Layered-Architecture.md)
-
-</div>

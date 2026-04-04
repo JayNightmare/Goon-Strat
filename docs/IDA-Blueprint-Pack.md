@@ -8,6 +8,10 @@ Provide a mission-grade, reviewable architecture baseline that links:
 
 - CCSDS requirements -> design decisions -> implementation modules -> tests -> evidence
 
+Why this approach:
+
+- It forces every implementation choice to be evidence-backed, which is essential for conformance scoring and judge confidence.
+
 ## 2. Required IDA Documents
 
 The following templates are provided in the `docs/ida` folder:
@@ -27,12 +31,19 @@ The following templates are provided in the `docs/ida` folder:
 - End Gateway 8: freeze traceability and conformance evidence
 - End Gateway 10: final publication package
 
+Rationale for milestone timing:
+
+- Milestones align with gateway transitions so documentation fidelity tracks implementation maturity.
+- Review points are positioned before high-risk integration periods to reduce uncontrolled design drift.
+
 ## 4. Document Ownership
 
 - Engineer A: requirements traceability + protocol design intent
 - Engineer B: V&V strategy + risk and safety case
-- Programmer A: module-level implementation details
-- Programmer B: tooling, examples, and documentation pipeline integration
+- Engineer C: interoperability operations, execution runbooks, and release-readiness reviews
+- Developer A: module-level implementation details for SPDU and COP-P
+- Developer B: tooling, examples, and documentation pipeline integration
+- Developer C: integration automation, benchmark tooling, and verification script ownership
 
 ## 5. Minimum Evidence Attached To IDA
 
@@ -41,19 +52,28 @@ The following templates are provided in the `docs/ida` folder:
 - Test vector references and decode outputs
 - Interoperability exchange report references
 
-## 6. Definition of Done for IDA Baseline
+Why these evidence types:
+
+- They cover correctness, performance, reproducibility, and interoperability, which map directly to the scoring model.
+
+## 6. Stack and Path Decision Record (must be filled)
+
+Document this explicitly in your first IDA review:
+
+- Chosen language/runtime and why it fits deterministic latency and memory targets.
+- Rejected alternatives and why they were rejected for this project.
+- Toolchain choices (build, test, benchmark, documentation) and rationale for each.
+- Risk trade-offs introduced by your choices and how they are mitigated.
+
+## 7. Definition of Done for IDA Baseline
 
 - Every mandatory spec feature is mapped to at least one test
 - Every public interface has a documented contract
 - Every major risk has mitigation and validation method
 - External reviewer can understand architecture and reproduce results
 
-<div align="center">
-
 [⬆️ Back to Top ⬆️](#initial-design-architecture-ida-blueprint-pack)
 
 ---
 
 [Back Phase](./Phase-4-Validation-Documentation.md) | [Next phase](./README.md)
-
-</div>

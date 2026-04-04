@@ -5,8 +5,8 @@
 - Project: CCSDS 235.1-W-0.4 Reference Implementation
 - Version: 0.1
 - Date:
-- Owners: Engineer A, Engineer B
-- Reviewers: Programmer A, Programmer B
+- Owners: Engineer A, Engineer B, Engineer C
+- Reviewers: Developer A, Developer B, Developer C
 
 ## Mission Statement
 
@@ -27,6 +27,14 @@ Deliver a correct, interoperable, and high-performance CCSDS 235.1 implementatio
 - Test-first evidence for protocol behavior
 - Reproducible builds and traceable documentation
 
+## Principle Rationale (fill this section)
+
+For each principle above, provide:
+
+- Why this principle is necessary for CCSDS 235.1 competition outcomes.
+- What technical risk increases if the principle is not enforced.
+- How compliance with the principle will be measured.
+
 ## Scope Boundaries
 
 In scope:
@@ -45,12 +53,16 @@ Out of scope:
 - Conformance matrix location:
 - PICS location:
 
-<div align="center">
+## Stack Decision Summary (fill this section)
+
+- Selected language/runtime:
+- Why selected for this project:
+- Alternatives considered:
+- Why alternatives were not selected:
+- Toolchain summary (build/test/benchmark/docs):
 
 [⬆️ Back to Top ⬆️](#ida-00-overview)
 
 ---
 
 [Back IDA](../IDA-Blueprint-Pack.md) | [Next IDA](./IDA-01-System-Context-and-Requirements.md)
-
-</div>

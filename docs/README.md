@@ -13,9 +13,16 @@ This folder contains an execution-ready planning set based on the official deliv
 
 ## Team Assumptions
 
-- Team size: 4
-- Roles: 2 engineers + 2 programmers
+- Team size: 6
+- Roles: 3 engineers + 3 developers
 - Objective: maximize score (100/100 target), while maintaining deterministic protocol behavior suitable for mission-grade reliability.
+
+## Why This Planning Structure
+
+- The document order mirrors execution order so dependencies are handled before integration pressure begins.
+- `Program-Execution-Plan.md` defines governance first because team coordination failures are one of the most common causes of late-stage defects.
+- `Phase-1` to `Phase-4` files are separated to make gateway ownership and acceptance criteria explicit, reducing scope ambiguity.
+- `IDA-Blueprint-Pack.md` and `docs/ida/*` exist as a parallel documentation track so architecture evidence grows with implementation, not after it.
 
 ## How To Use This Pack
 
@@ -24,12 +31,14 @@ This folder contains an execution-ready planning set based on the official deliv
 3. Use `IDA-Blueprint-Pack.md` to produce architecture artifacts and review them at each gateway.
 4. Track progress weekly against gateway validation checklists and scoring categories.
 
-<div align="center">
+## Usage Rationale
+
+- Start with role assignment before coding so accountability for correctness and verification is unambiguous.
+- Run phase plans as living checklists because competition scoring rewards complete evidence, not only implemented code.
+- Update IDA documents weekly to prevent documentation debt from accumulating into Phase 4.
 
 [⬆️ Back to Top ⬆️](#ccsds-2351-competition-planning-pack)
 
 ---
 
 [Back Phase](./IDA-Blueprint-Pack.md) | [Next phase](./Program-Execution-Plan.md)
-
-</div>

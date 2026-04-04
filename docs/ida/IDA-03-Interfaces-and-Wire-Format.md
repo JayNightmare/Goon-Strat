@@ -9,6 +9,11 @@ For each public API define:
 - Output and error semantics
 - Determinism expectations
 
+Interface rationale (fill this section):
+
+- Explain why each public API boundary is necessary and stable.
+- Explain how API design minimizes misuse and ambiguous behavior.
+
 ## 2. Internal Interface Contracts
 
 Document interfaces between:
@@ -27,6 +32,11 @@ Capture:
 - Frame header fields (P/U, version, QoS)
 - Endianness rules
 - Validation and reject rules
+
+Wire-format rationale (fill this section):
+
+- Explain why each validation rule exists and what interoperability defect it prevents.
+- Explain malformed-input handling policy and why graceful rejection is required.
 
 ## 4. Interoperability Artifacts Table
 
@@ -53,12 +63,13 @@ Define categories:
 - Channel errors
 - Conformance violations
 
-<div align="center">
+Error-model rationale (fill this section):
+
+- Explain why errors are grouped this way.
+- Explain required operator/developer action for each category.
 
 [⬆️ Back to Top ⬆️](#ida-03-interfaces-and-wire-format)
 
 ---
 
 [Back IDA](./IDA-02-Layered-Architecture.md) | [Next IDA](./IDA-04-VandV-and-Test-Strategy.md)
-
-</div>

@@ -14,11 +14,20 @@
 - Interoperability tests: cross-implementation exchange
 - Stress tests: sustained load and multi-session operation
 
+Test strategy rationale:
+
+- This structure catches low-level defects early and reserves expensive end-to-end validation for integrated behavior.
+- It balances rapid developer feedback with high-confidence system-level evidence.
+
 ## 3. Coverage and Quality Targets
 
 - Unit coverage target: above 90%
 - Mandatory branch coverage for state transition guards
 - Regression suite runtime budget:
+
+Coverage rationale (fill this section):
+
+- Explain why the chosen coverage and runtime budget provide enough confidence without blocking delivery cadence.
 
 ## 4. Requirement Traceability
 
@@ -39,6 +48,10 @@ Measure and report:
 - Per-session memory overhead
 - Throughput under concurrent sessions
 
+Performance evidence rationale (fill this section):
+
+- Explain how each metric maps to scoring criteria and operational reliability.
+
 ## 6. Conformance and PICS Plan
 
 - Build conformance matrix per mandatory feature
@@ -52,12 +65,12 @@ Measure and report:
 - Root cause template
 - Regression test requirement for every fixed defect
 
-<div align="center">
+Defect-process rationale:
+
+- Severity and SLA policy is designed to keep critical correctness and interoperability defects from crossing gateways.
 
 [⬆️ Back to Top ⬆️](#ida-04-verification-validation-and-test-strategy)
 
 ---
 
 [Back IDA](./IDA-03-Interfaces-and-Wire-Format.md) | [Next IDA](./IDA-05-Risk-and-Safety-Case.md)
-
-</div>

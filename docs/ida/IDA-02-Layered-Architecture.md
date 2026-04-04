@@ -12,6 +12,11 @@ Target layered model:
 6. Frame layer (P/U frame handling, QoS, versioning)
 7. Physical channel abstraction (mock + TCP/UDP)
 
+Architecture rationale:
+
+- This layering isolates concerns so protocol correctness can be verified independently from transport and application concerns.
+- It also enables deterministic unit testing at lower layers while preserving realistic integration paths at higher layers.
+
 ## 2. Module Decomposition
 
 For each module record:
@@ -30,6 +35,11 @@ Document:
 - Rx path from wire frame to protocol events
 - State update points and sequencing dependencies
 
+Data-flow rationale (fill this section):
+
+- Explain why each state update point is placed where it is.
+- Explain how sequencing prevents race conditions and replay/ordering defects.
+
 ## 4. Concurrency Model
 
 Define:
@@ -46,6 +56,11 @@ Define:
 - Avoided patterns (runtime allocation in hot paths)
 - Measurement method for per-session overhead
 
+Performance rationale (fill this section):
+
+- Explain why chosen allocation and reuse strategy is expected to satisfy <50 KB/session.
+- Explain why hot-path design is expected to satisfy <1 ms latency objectives.
+
 ## 6. Architecture Decisions (ADR links)
 
 List key ADRs:
@@ -55,12 +70,8 @@ List key ADRs:
 - State transition representation
 - Interface abstraction trade-offs
 
-<div align="center">
-
 [⬆️ Back to Top ⬆️](#ida-02-layered-architecture)
 
 ---
 
 [Back IDA](./IDA-01-System-Context-and-Requirements.md) | [Next IDA](./IDA-03-Interfaces-and-Wire-Format.md)
-
-</div>

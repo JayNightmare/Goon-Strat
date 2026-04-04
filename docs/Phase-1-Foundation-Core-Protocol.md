@@ -13,6 +13,12 @@
 - Deliver protocol core needed for workshop participation
 - Prove deterministic and performant implementation behavior early
 
+## Why This Phase Matters Most
+
+- Gateways 0-3 form the scoring and interoperability foundation; instability here cascades into every later gateway.
+- Early protocol correctness is cheaper than late rework after session and interoperability complexity is added.
+- Benchmark and negative-test instrumentation in this phase reduces false confidence and prevents brittle progress.
+
 ## Workstreams
 
 1. Architecture and design control
@@ -30,10 +36,15 @@
      - Draft initial ADRs for architecture choices
 - Engineer B
      - Define verification strategy, coverage targets, and performance methodology
-- Programmer A
+- Engineer C
+     - Define interoperability rehearsal objectives and artifact exchange readiness criteria
+     - Prepare operations runbook structure for workshop and gateway demos
+- Developer A
      - Scaffold protocol crates/modules and shared types
-- Programmer B
+- Developer B
      - Configure build/test tooling and CI skeleton
+- Developer C
+     - Build benchmark harness wiring and integration-test scaffolding
 
 Exit criteria:
 
@@ -41,14 +52,22 @@ Exit criteria:
 - Build passes in clean environment
 - Test framework executes baseline tests
 
+Why these steps:
+
+- Architecture and ADR work first creates shared mental models and avoids implementation divergence across team members.
+- Early CI/test bring-up ensures every later gateway can be measured by evidence, not subjective progress.
+
 ### Weeks 3-5 (Gateway 1)
 
-- Engineer A + Programmer A
+- Engineer A + Developer A
      - Implement SPDU encode/decode for F1, F2, 1-5
      - Implement directive decode for Type 1 and Type 2
-- Engineer B + Programmer B
+- Engineer B + Developer C
      - Build malformed input and negative test matrix
      - Add sub-1 ms microbench checks per SPDU class
+- Engineer C + Developer B
+     - Build golden-vector generation pipeline and artifact review checklist
+     - Integrate SPDU conformance evidence output into CI reports
 
 Exit criteria:
 
@@ -56,14 +75,22 @@ Exit criteria:
 - Malformed SPDUs rejected gracefully
 - Benchmarks indicate under 1 ms per SPDU
 
+Why these steps:
+
+- SPDU and directive handling define canonical wire semantics used by COP-P and frame processing.
+- Negative tests are paired with performance checks to ensure robustness does not come at hidden latency cost.
+
 ### Weeks 6-8 (Gateway 2)
 
-- Engineer A + Programmer A
+- Engineer A + Developer A
      - Implement FOP-P logic including 8/16-bit sequence handling
      - Implement FARM-P logic for receive/retransmit behavior
-- Engineer B + Programmer B
+- Engineer B + Developer C
      - Implement COP-P coordinator behavior for Expedited and Sequence Controlled modes
      - Add persistence process tests and wrap-around edge cases
+- Engineer C + Developer B
+     - Implement COP-P observability events and triage dashboards for interoperability debugging
+     - Build replay tooling for retransmit/resync scenarios captured during tests
 
 Exit criteria:
 
@@ -71,20 +98,33 @@ Exit criteria:
 - Retransmit and resynchronization scenarios pass
 - Window logic enforces boundaries
 
+Why these steps:
+
+- COP-P sequence and retransmission logic is the reliability core of the protocol; correctness must be proven under edge conditions.
+- Wrap-around and resynchronization tests are mandatory because defects often appear only at sequence boundaries.
+
 ### Weeks 9-10 (Gateway 3)
 
-- Programmer B + Engineer A
+- Developer B + Engineer A
      - Implement P-frame and U-frame tx/rx pipeline
      - Add Version-3/Version-4 frame support and QoS flag handling
-- Programmer A + Engineer B
+- Developer A + Engineer B
      - Build frame parser robustness tests and malformed frame rejection
      - Validate under 1 ms frame processing
+- Engineer C + Developer C
+     - Build frame-level interoperability drill scripts and transport trace capture tooling
+     - Validate frame artifacts against workshop exchange runbook
 
 Exit criteria:
 
 - P-frame/U-frame handling correct and differentiated
 - SPDU extraction from P-frames validated
 - QoS and version flags verified
+
+Why these steps:
+
+- Frame layer correctness is the bridge from internal state logic to interoperable wire behavior.
+- Version and QoS validation is separated explicitly because these fields are frequent interoperability failure points.
 
 ## Required Documents Produced in Phase 1
 
@@ -100,17 +140,18 @@ Exit criteria:
 - Risk: hidden latency spikes
      - Mitigation: benchmark each merge on representative payloads
 
+Rationale for risk controls:
+
+- Section-linked tests make spec interpretation auditable.
+- Per-merge benchmarking catches regressions at commit time instead of at gateway deadlines.
+
 ## Phase 1 Definition of Success
 
 - Gateways 0-3 evidence complete
 - Workshop prerequisites met (working core + hex dump capability)
-
-<div align="center">
 
 [⬆️ Back to Top ⬆️](#phase-1-plan-foundation-and-core-protocol-weeks-1-10)
 
 ---
 
 [Back Phase](./Program-Execution-Plan.md) | [Next phase](./Phase-2-Workshop-Preparation.md)
-
-</div>
